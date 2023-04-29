@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Fahim_AjaxShoppingCartUpdate:etc/system_file.xsd">
+    <system>
+        <tab id="ACP" translate="label" sortOrder="400">
+            <label>AJAX Shopping Cart Update</label>
+        </tab>
+        <section id="AjaxShoppingCartUpdate" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Settings</label>
+            <tab>ACP</tab>
+            <resource>Fahim_AjaxShoppingCartUpdate::Fahim_ajaxshoppingcartupdate</resource>
+            <group id="AjaxShoppingCartUpdateGroup" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>AJAX Shopping Cart Update</label>
+                <field id="isEnableDisable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
